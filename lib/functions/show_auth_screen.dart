@@ -1,6 +1,5 @@
 import 'dart:io';
 
-
 import 'package:nt_crm/functions/login.dart';
 
 import 'package:nt_crm/functions/sign_up.dart';
@@ -41,6 +40,10 @@ void showAuthScreen() {
             var students = repository.fetchStudents();
             for (final student in students) {
               print(student);
+            }
+            var admins = adminRepository.fetchAdmins();
+            for (final admin in admins) {
+              print(admin);
             }
 /*             stdin.readLineSync();
  */

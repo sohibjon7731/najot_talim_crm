@@ -14,7 +14,7 @@ void login() {
 Kim sifatida kirishni istaysiz?
 1. O'qituvchi
 2. Talaba
-3 . ADm
+3. Adminstrator
 0. Orqaga
 """);
 
@@ -27,7 +27,7 @@ Kim sifatida kirishni istaysiz?
     } else {
       if (command == 0) {
         isTerminated = true;
-      } else if (command == 1 || command == 2) {
+      } else if (command == 1 || command == 2 || command == 3) {
         authenticatedUser = loginAsUser(command);
       } else {
         print("Siz mavjud bo'lmagan buyruq kiritdingiz!");
@@ -44,8 +44,10 @@ AuthenticatedUser? loginAsUser(int command) {
   try {
     if (command == 1) {
       authenticatedUser = teacherRepository.fetchTeacher(id, password);
-    } else {
+    } else if (command == 2) {
       authenticatedUser = repository.fetchStudent(id, password);
+    } else {
+      authenticatedUser = adminRepository.fetchAdmin(id, password);
     }
   } catch (e) {
     print("Foydalanuvchi topilmadi");

@@ -14,6 +14,18 @@ class AppConstans {
 5. Dasturni to'xtatish
 """;
 
+  static const mainMenuTextAdmin = """
+1. Ro'yxatdan o'tgan o'qituvchilar
+2. Ro'yxatdan o'tgan talabalar
+3. O'qituvchi qo'shish
+4. Talaba qo'shish
+5. O'qituvchini o'chirish
+6. Talabani o'chirish
+7. Tahrirlash
+8. LogOut
+9. Dasturni to'xtatish
+""";
+
   static const editProfileTextStudent = """
 O'zgartirmoqchi bo'lgan ma'lumotni tanlang:
 1. Ism
@@ -36,5 +48,15 @@ O'zgartirmoqchi bo'lgan ma'lumotni tanlang:
 6. IsMale
 7. password
 0. Chiqish
+""";
+
+  static const editProfileTextAdmin = """
+O'zgartirmoqchi bo'lgan ma'lumotni tanlang:
+1. Ism
+2. Familiya
+3. Parol
+4. Email
+0. Chiqish
+
 """;
 }
