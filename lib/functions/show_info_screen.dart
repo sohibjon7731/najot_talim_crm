@@ -27,7 +27,7 @@ void showInfoScreen() {
         print("Siz yaroqsiz qiymat kiritdingiz!");
       } else {
         /* clearTerminal(); */
-        if (parsedInput <= 8 && parsedInput >= 1) {
+        if (parsedInput <= 9 && parsedInput >= 1) {
           switch (parsedInput) {
             case 1:
               // TODO 4: fix
